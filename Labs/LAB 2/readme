@@ -18,6 +18,6 @@ class="" :- A CSS class is an attribute used to define a group of HTML elements 
 id :- The id global attribute defines an identifier (ID) which must be unique in the whole document. Its purpose is to identify the element when linking (using a fragment identifier), scripting, or styling (with CSS).
 
 Hover :
- hover selector is used to select elements when you mouse over them.
+ hover selector is used. to select elements when you mouse over them.
 
- ![ques1](button.png)
+ ![ques1](https://raw.githubusercontent.com/saugatpoudel100/wt-lab-assignment/master/Labs/LAB%202/button.png)
