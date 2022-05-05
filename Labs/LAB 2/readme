@@ -1,5 +1,5 @@
  DATE: 2022/04/28  2022/05/04
-      ![ques1](Final-buttons-ui.png)
+      
 
 
  Buttons:
@@ -20,3 +20,4 @@ id :- The id global attribute defines an identifier (ID) which must be unique in
 Hover :
  hover selector is used to select elements when you mouse over them.
  
+ ![ques1](Final-buttons-ui.png)
