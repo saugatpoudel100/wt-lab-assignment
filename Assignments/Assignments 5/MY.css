@@ -1,0 +1,88 @@
+.header{
+    display: inline-block;
+    border: solid 0px brown;
+    background-color: rgb(219, 214, 214);
+    height: 100px;
+    width:1507px;
+    
+    
+}
+
+header{
+    color: rgba(58, 30, 240, 0.648);
+    font-size: 30px;
+}
+.c1 p{
+    display: inline-block;
+    border: solid 2px  bisque;
+    height: 20px;
+    width: 20px;
+}
+a{
+    margin:auto;
+    padding: 140px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+}
+.header a img{
+    height:50px;
+    width: 50px;
+    border-radius: 50px;
+    position:absolute;
+    left: 1450px;
+    top: 20px;
+}
+ .aside  aside img{
+     height: 200px;
+     width: 283px;
+    
+
+ }
+ .aside{
+     display: inline-block;
+     border: solid 1px;
+     width:280px;
+     height: 60px;
+     position: relative;
+     left: 1227px;
+     top: -245px;
+     
+     
+ }
+ .rule img{
+     height: 300px;
+     width: 500px;
+     position: relative;
+     left: 400px;
+ }
+ table{
+     color: darkblue;
+     border-color: slategrays;
+     position: relative;
+     left: 100px;
+ }
+.cup{
+    border: solid 2px;
+    width: 274px;
+    height: 210px;
+    position: relative;
+    left: 800px;
+    top: -300px;
+    background-color: brown;
+}
+button{
+    height: 30px;
+    width: 100px;
+    position: relative;
+    left: 90px;
+    top: -43px;
+}
+.icon img{
+    height: 80px;
+    width: 190px;
+    position: relative;
+    left: 1200px;
+    top: -30px;
+}
