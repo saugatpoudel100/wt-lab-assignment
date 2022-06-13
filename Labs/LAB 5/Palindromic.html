@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindromic</title>
+</head>
+<body>
+    <script>
+            let a = prompt("Enter a number:");
+    let p = a;
+    function revNumber(a) {
+        let rev = 0, x;
+        while (a != 0) {
+            x = a % 10;
+            a = parseInt(a / 10);
+            rev = rev * 10 + x;
+        }
+        return rev;
+    }
+    if ((revNumber(a)) == p) {
+        console.log("Palindrome");
+    }
+    else {
+        console.log("Not Palindrome");
+
+    }
+    console.log(revNumber(a));
+    </script>
+    
+</body>
+</html>
