@@ -1,6 +1,8 @@
     Assignment Date - Tue June 21/22 - Wed June 22/22
 
-    ![screenshots](./gces.png)
+    ![screenshots](gces.png)
+
+    
 Table Of Contents
 
 Arrays In PHP
