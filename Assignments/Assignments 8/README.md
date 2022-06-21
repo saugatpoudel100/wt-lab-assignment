@@ -32,7 +32,7 @@ Examples:
 Example 1: Sort Integer Array in Ascending Order
 For instance, if you want to sort an integer array in ascending order, use the PHP sort Function.
 
-<?php
+`<?php
   $array = array(5, 1, 2, 7, 3);
   sort($array);
   print_r($array);
@@ -46,13 +46,13 @@ For instance, if you want to sort an integer array in ascending order, use the P
       [4] => 7
   )
   */
-?>
+?>`
 Similarly, you can sort the array in descending order using PHP rsort Function.
 
 Example 2: Sorting Associative Arrays
 However, to sort an associative array in PHP, use the asort Function to maintain the key-value relationship.
 
-<?php
+`<?php
   $array = array('b' => 'banana', 'c' => 'cat', 'a' => 'apple');
   asort($array);
   print_r($array);
@@ -64,11 +64,11 @@ However, to sort an associative array in PHP, use the asort Function to maintain
       [c] => cat
   )
   */
-?>
+?>`
 Example 3: Passing Comparison Sort Function
 Also, you can pass a comparison function in PHP usort Function for sorting arrays in PHP.
 
-<?php
+`<?php
   function compare($a, $b) {
     if ($a == $b) {
       return 0;
@@ -80,11 +80,14 @@ Also, you can pass a comparison function in PHP usort Function for sorting array
   }
   $testArray = array(4, 2, 1, 5, 3);
   usort($testArray, 'compare');
-?>
+?>`
+
+
 Example 4: Sorting Arrays in PHP by Keys
+
 Similarly, you can sort an Associative Array according to keys instead of values using the ksort Function in PHP.
 
-<?php
+`<?php
   $testArray = array(1 => 5, 0 => 6, 4 => 3, 3 => 2, 2 => 1);
   ksort($testArray);
   print_r($testArray);
@@ -98,7 +101,7 @@ Similarly, you can sort an Associative Array according to keys instead of values
       [4] => 3
   )
   */
-?>
+?>`
 Alternatively, you can use the krsort function to sort array in descending order according to keys.
 
 
