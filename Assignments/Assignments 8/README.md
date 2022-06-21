@@ -1,90 +1,105 @@
     Assignment Date - Tue June 21/22 - Wed June 22/22
 
-    ![screenshots](gces.png)
+                   
+                           SORTING OF ARRAY
 
-    
-Table Of Contents
+Introduction:
 
-Arrays In PHP
-Types of Arrays in PHP
-VIEW ARRAYS
-PHP Sorting Arrays
-PHP Functions For Sorting Arrays
-Sorting Indexed Arrays in Descending Order
-Arrays In PHP
-Arrays are complex variables that allow us to store more than one value or a group of values under a single variable name. Let's suppose you want to store colors in your PHP script. Storing the colors one by one in a variable could look something like this: PHP <?php $color1 = "Red"; $color2 = "Green"; $color3 = "Blue"; ?>
+            Sorting is a process by which we can arrange the elements of a list in a 
+            specific order i.e. ascending or descending order. We can say sorting is the
+            process of putting a list or a group of items in a specific order. Sorting may 
+            be alphabetical or numerical.
 
-Types of Arrays in PHP
-Indexed array — An array with a numeric key.
+            In PHP, sorting is a process of arranging the elements of an array in a specific
+            order i.e. ascending or descending order. Using sorting you can analyze a list in
+            a more effective way. You can sort an array by value, key or randomly. In most
+            situations, we need to sort an array by value.
 
-<?php
-$colors[0] = "Red"; 
-$colors[1] = "Green"; 
-$colors[2] = "Blue"; 
-?>
-Associative array — An array where each key has its own specific value.
 
-  ```PHP 
-  <?php
-  $ages["Peter"] = "22";
-  $ages["Clark"] = "32";
-  $ages["John"] = "28";
-  ?>
-  ```
-Multidimensional array — An array containing one or more arrays within itself.
+            Some sorting functions are as follows:
 
-<?php
-// Define a multidimensional array
-$contacts = array(
-    array(
-        "name" => "Peter Parker",
-        "email" => "peterparker@mail.com",
-    ),
-    array(
-        "name" => "Clark Kent",
-        "email" => "clarkkent@mail.com",
-    ),
-    array(
-        "name" => "Harry Potter",
-        "email" => "harrypotter@mail.com",
-    )
-);
-// Access nested value
-echo "Peter Parker's Email-id is: " . $contacts[0]["email"];
-?>
-VIEW ARRAYS
-You can see the structure and values of any array by using one of two statements — var_dump() or print_r(). The print_r() statement, however, gives somewhat less information. Consider the following example:
+             * sort()
+             * asort()
+             * rsort()
+             * arsort()
+             * kshort()
+             * ushort()
+
+
+Examples:
+
+
+Example 1: Sort Integer Array in Ascending Order
+For instance, if you want to sort an integer array in ascending order, use the PHP sort Function.
 
 <?php
-// Define array
-$cities = array("London", "Paris", "New York");
- 
-// Display the cities array
-print_r($cities);
+  $array = array(5, 1, 2, 7, 3);
+  sort($array);
+  print_r($array);
+  /*
+  Array
+  (
+      [0] => 1
+      [1] => 2
+      [2] => 3
+      [3] => 5
+      [4] => 7
+  )
+  */
 ?>
-PHP Sorting Arrays
-PHP Functions For Sorting Arrays
-sort() and rsort() — For sorting indexed arrays
-asort() and arsort() — For sorting associative arrays by value
-ksort() and krsort() — For sorting associative arrays by key
-<?php
-// Define array
-$colors = array("Red", "Green", "Blue", "Yellow");
- 
-// Sorting and printing array
-sort($colors);
-print_r($colors);
-?>
-        Array ( [0] => Blue [1] => Green [2] => Red [3] => Yellow ) 
-Sorting Indexed Arrays in Descending Order
-<?php
-// Define array
-$colors = array("Red", "Green", "Blue", "Yellow");
+Similarly, you can sort the array in descending order using PHP rsort Function.
 
-// Sorting and printing array
-rsort($colors);
-print_r($colors);
+Example 2: Sorting Associative Arrays
+However, to sort an associative array in PHP, use the asort Function to maintain the key-value relationship.
+
+<?php
+  $array = array('b' => 'banana', 'c' => 'cat', 'a' => 'apple');
+  asort($array);
+  print_r($array);
+  /*
+  Array
+  (
+      [a] => apple
+      [b] => banana
+      [c] => cat
+  )
+  */
 ?>
-        Array ( [0] => Yellow [1] => Red [2] => Green [3] => Blue )
+Example 3: Passing Comparison Sort Function
+Also, you can pass a comparison function in PHP usort Function for sorting arrays in PHP.
+
+<?php
+  function compare($a, $b) {
+    if ($a == $b) {
+      return 0;
+    } else if ($a > $b) {
+      return 1;
+    } else {
+      return -1;
+    }
+  }
+  $testArray = array(4, 2, 1, 5, 3);
+  usort($testArray, 'compare');
+?>
+Example 4: Sorting Arrays in PHP by Keys
+Similarly, you can sort an Associative Array according to keys instead of values using the ksort Function in PHP.
+
+<?php
+  $testArray = array(1 => 5, 0 => 6, 4 => 3, 3 => 2, 2 => 1);
+  ksort($testArray);
+  print_r($testArray);
+  /*
+  Array
+  (
+      [0] => 6
+      [1] => 5
+      [2] => 1
+      [3] => 2
+      [4] => 3
+  )
+  */
+?>
+Alternatively, you can use the krsort function to sort array in descending order according to keys.
+
 
         
